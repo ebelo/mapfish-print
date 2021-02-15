@@ -16,6 +16,8 @@ jobs:
       SECRETS: ${{ secrets.SECRETS }}
 
     steps:
+      - run: echo $GITHUB_REF
+
       - uses: actions/checkout@v2
 
       - name: Get tag
@@ -102,6 +104,8 @@ jobs:
           name: Test results
           path: /tmp/test_results
         if: failure()
+
+      - run: echo $GITHUB_REF
 
       - name: Publish
         run: c2cciutils-publish
