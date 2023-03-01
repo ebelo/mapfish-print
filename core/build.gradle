@@ -177,7 +177,7 @@ dependencies {
             'com.amazonaws:aws-java-sdk-s3:1.12.210',
             'com.adobe.xmp:xmpcore:6.1.11',
             'io.sentry:sentry-logback:5.7.3',
-            'net.logstash.logback:logstash-logback-encoder:7.1.1',
+            'net.logstash.logback:logstash-logback-encoder:7.3',
     )
 
     compile(configurations.metrics) {
